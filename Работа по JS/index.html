@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>Телефонная книга</title>
+</head>
+<body>
+    <div class="container">
+        <div id="phone_book">
+            <header>
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="search" id="search"></input>
+            </header>
+            <div id="main_info">
+            </div>
+            <footer>
+                <button onclick="add()">Добавить</button>
+            </footer>
+        </div>
+        <div id="window">
+            <header>
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                <h2>Add contact</h2>
+            </header>
+            <form action=" ">
+                <input type="text" placeholder="Name" class="int_form input1" id="first">
+                <input type="text" placeholder="Phone" class="int_form input2" id="second">
+                <div class="blocks">
+                    <input type="checkbox" name="" id="faver">
+                    <label for="faver">Добавить в избранное</label>
+                </div>
+            </form>
+            <footer>
+                <button onclick="create()">Создать</button>
+            </footer>
+        </div>
+    </div>
+    <script src="js/forma.js"></script>
+</body>
+</html>
